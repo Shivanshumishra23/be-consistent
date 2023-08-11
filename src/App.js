@@ -1,23 +1,38 @@
 import logo from './logo.svg';
 import './App.css';
 
+
+
 function App() {
+
+
+  async function getData(){
+  
+ 
+ 
+  
+    let response, data, runURL ;
+    try{
+      runURL= "https://parsehub.com/api/v2/runs/t8oYhTn83vDq/data?api_key=taCT_3Pp0mwO";
+      response = await fetch(runURL);
+      data = await response.json;
+    }
+    catch(err){ console.log(err);}
+    
+  
+    
+
+    
+    console.log(data);
+ 
+ }
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <button onClick={getData}> hello</button>
+
     </div>
   );
 }
