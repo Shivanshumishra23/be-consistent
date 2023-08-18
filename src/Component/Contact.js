@@ -19,7 +19,7 @@ function Contact() {
     setBtnText(" Sending");
     setLoading(true);
     try {
-      result = await emailjs.sendForm('service_s9rog6w', 'template_i4pog28', form.current, 'LEbtOV3d7OjrlmzsO');
+      result = await emailjs.sendForm('service_s9rog6w', 'template_i4pog28', form.current, process.env.REACT_APP_API_KEY);
       if (result.status !== 200) toast.error('Error Sending Message !!');
       else toast.success('Message sent sucessfully !!');
     }

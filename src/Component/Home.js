@@ -8,6 +8,8 @@ import Footer from './Footer';
 
 
 const Home = () => {
+
+  document.title = "Be Consistent";
 const plateformIconCodeforces = "codeforces_Icon.png";
 const plateformIconCodechef = "codechef_Icon.png";
 const plateformIconLeetcode = "leetCode_logo_black.png";

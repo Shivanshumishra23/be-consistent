@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from './Footer'
 
 const About = () => {
+  document.title = "About- Be Consistent";
   return (
     <div className='h-screen'>
        <div className="text-white h-full p-4 flex flex-col justify-center items-center text-center">
